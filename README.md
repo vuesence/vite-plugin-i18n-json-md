@@ -1,5 +1,7 @@
 # vite-plugin-i18n-json-md
 
+[🇬🇧 English](README.md) | [🇪🇸 Español](README.es.md) | [ru Russian](README.ru.md)
+
 ## Overview
 
 `vite-plugin-i18n-json-md` is a Vite plugin that significantly facilitates the internationalization of an application. It allows translating text in JSON5 and Markdown formats into the standard JSON format for i18n files.
@@ -38,7 +40,7 @@ The plugin provides comprehensive configuration options to customize your intern
 
 ### `sourceDir` (Required)
 - **Type**: `string`
-- **Description**: The directory where your source translation files are located.
+- **Description**: The directory where your source translation files are located. Subdirectories of the corresponding locale will be processed as well.
 - **Example**: `'src/locales'`
 
 ### `outputDir` (Required)

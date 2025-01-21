@@ -1,6 +1,6 @@
 # vite-plugin-i18n-json-md
 
-[🇬🇧 English](README.md) | [🇷🇺 Русский](README.ru.md)
+[🇬🇧 English](README.md) | [🇪🇸 Español](README.es.md) | [ru Russian](README.ru.md)
 
 ## Descripción general
 
