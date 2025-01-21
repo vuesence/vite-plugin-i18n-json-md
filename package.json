@@ -35,7 +35,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm build && copy index.d.ts dist\\index.d.ts",
+    "build": "vite build && copy index.d.ts dist\\index.d.ts",
     "publish": "npm publish --access public"
   },
   "devDependencies": {
