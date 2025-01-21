@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-i18n-json-md",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Vite plugin for processing markdown in JSON/JSON5 files for i18n",
   "author": "Ruslan Makarov <ruslan.makarov@gmail.com>",
   "license": "MIT",
