@@ -6,12 +6,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/altrusl/vite-plugin-i18n-json-md.git"
+    "url": "git+https://github.com/vuesence/vite-plugin-i18n-json-md.git"
   },
   "bugs": {
-    "url": "https://github.com/altrusl/vite-plugin-i18n-json-md/issues"
+    "url": "https://github.com/vuesence/vite-plugin-i18n-json-md/issues"
   },
-  "homepage": "https://github.com/altrusl/vite-plugin-i18n-json-md",
+  "homepage": "https://github.com/vuesence/vite-plugin-i18n-json-md",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
