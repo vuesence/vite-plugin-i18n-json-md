@@ -16,6 +16,7 @@ export interface I18nJsonMdPluginOptions {
   mode?: "dev" | "prod" | "both" | "off";
   minify?: boolean;
   outputFormat?: "json" | "json5" | "js";
+  externalLinks?: boolean;
 }
 
 export function i18nJsonMdPlugin(options: I18nJsonMdPluginOptions): Plugin {
@@ -26,6 +27,7 @@ export function i18nJsonMdPlugin(options: I18nJsonMdPluginOptions): Plugin {
     mode = "both",
     minify = false,
     outputFormat = "json",
+    externalLinks = false,
   } = options;
 
   let config: undefined | ResolvedConfig;
@@ -66,7 +68,7 @@ export function i18nJsonMdPlugin(options: I18nJsonMdPluginOptions): Plugin {
       const parsedData = JSON5.parse(fileContent);
 
       // Recursively process markdown in the current file's data
-      traverseJsonNodes(parsedData, localeDir);
+      traverseJsonNodes(parsedData, localeDir, true, externalLinks);
 
       // Directly merge the parsed data into the combined object
       deepMerge(combinedParsedData, parsedData);
