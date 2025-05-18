@@ -18,6 +18,7 @@ declare module "vite-plugin-i18n-json-md" {
     mode?: "dev" | "prod" | "both" | "off";
     minify?: boolean;
     outputFormat?: "json" | "json5" | "js";
+    externalLinks?: boolean;
   }
 
   /**

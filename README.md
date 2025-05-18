@@ -72,6 +72,11 @@ The plugin provides comprehensive configuration options to customize your intern
 - **Default**: `"json"`
 - **Description**: The format of the generated translation files.
 
+### `externalLinks` (Optional)
+- **Type**: `boolean`
+- **Default**: `false`
+- **Description**: Adds target="_blank" to the links.
+
 ## Configuration Example
 
 Here's a configuration example:
@@ -88,7 +93,8 @@ export default defineConfig({
       locales: ['en', 'fr', 'es'],
       mode: 'both',
       minify: true,
-      outputFormat: 'json'
+      outputFormat: 'json',
+      externalLinks: true
     })
   ]
 });

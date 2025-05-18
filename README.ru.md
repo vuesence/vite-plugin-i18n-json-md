@@ -71,6 +71,11 @@ pnpm add vite-plugin-i18n-json-md --dev
 - **По умолчанию**: `"json"`
 - **Описание**: Формат генерируемых файлов переводов.
 
+### `externalLinks` (Необязательный)
+- **Тип**: `boolean`
+- **По умолчанию**: `false`
+- **Описание**: Добавляет target="_blank" к ссылкам.
+
 ## Пример конфигурации
 
 Вот пример конфигурации:
@@ -87,7 +92,8 @@ export default defineConfig({
       locales: ['en', 'fr', 'es'],
       mode: 'both',
       minify: true,
-      outputFormat: 'json'
+      outputFormat: 'json',
+      externalLinks: true
     })
   ]
 });

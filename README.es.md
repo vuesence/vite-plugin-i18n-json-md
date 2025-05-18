@@ -69,7 +69,12 @@ El complemento proporciona opciones de configuración completas para personaliza
 ### `outputFormat` (Opcional)
 - **Tipo**: `"json" | "json5" | "js"`
 - **Por defecto**: `"json"`
-- **Descripción**: Formato de los archivos de traducción generados.
+- **Descripción**: El formato de los archivos de traducción generados.
+
+### `externalLinks` (Opcional)
+- **Tipo**: `boolean`
+- **Por defecto**: `false`
+- **Descripción**: Agrega `target="_blank"` a los enlaces.
 
 ## Ejemplo de Configuración
 
@@ -87,7 +92,8 @@ export default defineConfig({
       locales: ['en', 'fr', 'es'],
       mode: 'both',
       minify: true,
-      outputFormat: 'json'
+      outputFormat: 'json',
+      externalLinks: true
     })
   ]
 });
